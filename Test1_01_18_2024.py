@@ -1,4 +1,4 @@
-# Practice and Learning from LearnPython Basics. 
+# Practice and Learning from LearnPython Basics. Author: Shaqib
 
 #Interger
 myint=7

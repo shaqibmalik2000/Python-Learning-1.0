@@ -1,4 +1,4 @@
-# Practice Project 2. Author: Shaqib Malik.
+# Practice Project 2. Author: Shaqib Malik
 
 import random
 

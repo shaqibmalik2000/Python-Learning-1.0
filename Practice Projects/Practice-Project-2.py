@@ -14,7 +14,7 @@ else:
     print('Please type a number next time.')
     quit()
 
-random_number = random.randit(0, top_of_range) # randint includes all numbers typed, while randrange does not include the last number.
+random_number = random.randint(0, top_of_range) # randint includes all numbers typed, while randrange does not include the last number.
 guesses = 0
 
 while True:

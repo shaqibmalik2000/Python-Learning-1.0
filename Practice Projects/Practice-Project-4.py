@@ -35,4 +35,4 @@ elif answer == "right":
     else:
         print('Not a valid option. You lose.')
 
-    print("Thank you for trying", name)
+print("Thank you for trying", name)

@@ -17,7 +17,7 @@ if answer == "left":
         print('Not a valid option. You lose.')
 
 elif answer == "right":
-    answer = input("You come to a bride, it looks wobbly, do you want to cross it or head back (cross/back)? ")
+    answer = input("You come to a bridge, it looks wobbly, do you want to cross it or head back (cross/back)? ")
 
     if answer == "back":
         print("You go back and lose.")
@@ -32,7 +32,7 @@ elif answer == "right":
         else:
             print('Not a valid option. You lose.')
 
-    else:
-        print('Not a valid option. You lose.')
+else:
+    print('Not a valid option. You lose.')
 
 print("Thank you for trying", name)

@@ -1,3 +1,5 @@
+# Practice Project 2. Author: Shaqib Malik.
+
 import random
 
 top_of_range = input("Type a number: ")

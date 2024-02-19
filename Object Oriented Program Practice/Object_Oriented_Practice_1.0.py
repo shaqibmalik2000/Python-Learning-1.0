@@ -17,7 +17,7 @@ class Dog:
     def set_age(self, age):
         self.age = age
 
-d = Dog("Tim", 34)
+d = Dog("Tim", 34)      # Error appears here. Dog does not take any argument. 02/19/2024
 d.set_age(23)
 print(d.get_age())
 

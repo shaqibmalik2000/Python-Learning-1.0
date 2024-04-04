@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import scipy.stats
 
 HERE = Path(__file__).parent
-DATA_FOLDER = HERE / "data"
+DATA_FOLDER = HERE / "materials-pandas-gradebook-project/data"
 
 roster = pd.read_csv(
     DATA_FOLDER / "roster.csv",
@@ -66,7 +66,7 @@ final_data["Homework Score"] = final_data[
 ].max(axis=1)
 
 quiz_scores = final_data.filter(regex=r"^Quiz \d$", axis=1)
-quiz_max_points = pd.series(
+quiz_max_points = pd.Series(
     {"Quiz 1": 11, "Quiz 2": 15, "Quiz 3": 17, "Quiz 4": 14, "Quiz 5": 12}
 )
 
@@ -136,7 +136,7 @@ final_data["Final Score"].plot.density(
 final_mean = final_data["Final Score"].mean()
 final_std = final_data["Final Score"].std()
 x = np.linspace(final_mean - 5 * final_std, final_mean +5 * final_std, 200)
-normal_dist = scipy.state.norm.pdf(x, loc=final_mean, scale=final_std)
+normal_dist = scipy.stats.norm.pdf(x, loc=final_mean, scale=final_std)
 plt.plot(x, normal_dist, label="Normal Distribution", linewidth=4)
 plt.legend()
 plt.show()
